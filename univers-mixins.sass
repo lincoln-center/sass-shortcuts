@@ -1,29 +1,31 @@
-/* Weight Mixin -------------------------------------- */
-@mixin font-weight
+/* Reset Mixin -------------------------------------- */
+@mixin normalize
 	font-weight: normal
+	font-style: normal
+	font-family: 'helvetica neue', arial, helvetica, sans-serif // for fallbacks
 	
 
 /* Light -------------------------------------- */
 @mixin univers-light
 	font-family: "LinotypeUniversW01-Ligh 723631"
-	+font-weight
+	+normalize
 
 /* Light Italic -------------------------------------- */
 @mixin univers-light-italic
 	font-family: "LinotypeUniversW01-Ligh 723634"
-	+font-weight
+	+normalize
 
 /* Bold -------------------------------------- */
 @mixin univers-bold
 	font-family: "LinotypeUniversW01-Bold 723697"
-	+font-weight
+	+normalize
 
 /* Condensed Light -------------------------------------- */
 @mixin univers-condensed-light
 	font-family: "LinotypeUniversW01-Ligh 723625"
-	+font-weight
+	+normalize
 
 /* Condensed Medium -------------------------------------- */
 @mixin univers-condensed-medium
 	font-family: "LinotypeUniversW01-Medi 723673"
-	+font-weight
+	+normalize
