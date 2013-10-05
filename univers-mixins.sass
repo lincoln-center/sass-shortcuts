@@ -2,18 +2,24 @@
 @mixin normalize
 	font-weight: normal
 	font-style: normal
-	font-family: 'helvetica neue', arial, helvetica, sans-serif // for fallbacks
+
+$fallbacks: 'helvetica neue', arial, helvetica, sans-serif
 	
 
 /* Light -------------------------------------- */
 @mixin univers-light
 	+normalize
-	font-family: "LinotypeUniversW01-Ligh 723631"
+	font-family: "LinotypeUniversW01-Ligh 723631", $fallbacks
 
 /* Light Italic -------------------------------------- */
 @mixin univers-light-italic
 	+normalize
 	font-family: "LinotypeUniversW01-Ligh 723634"
+
+/* Regular -------------------------------------- */
+@mixin univers
+	+normalize
+
 
 /* Bold -------------------------------------- */
 @mixin univers-bold
